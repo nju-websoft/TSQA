@@ -1,0 +1,17 @@
+python run_kbert_cls.py \
+  --pretrained_model_path models/uer_model.bin \
+  --vocab_path models/vocab.txt \
+  --train_path datasets/c3/c3_all.json \
+  --dev_path datasets/c3/c3-m-dev.json \
+  --test_path datasets/c3/c3-m-dev.json \
+  --epochs_num 5 --batch_size 16 \
+  --output_model_path outputs/c3_model \
+  --tokenizer word \
+  --encoder bert \
+  --seq_length 256 \
+  --learning_rate 1e-5 \
+  --max_entities 0 \
+  --no_vm \
+  --task_name multi_choice \
+  --labels_num 2 \
+  --c3
