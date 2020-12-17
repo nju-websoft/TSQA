@@ -60,3 +60,4 @@ Run question answer on GeoTSQA, for example, when we select the top-1 from the r
 ```shell script
 python cross_val_multi_choice.py --nn sentences_1 --data_path datasets/qa/sentences_1 --gpu 0,1
 ```
+If you have any problem, feel free to contact with xiaoli.nju@smail.nju.edu.cn
